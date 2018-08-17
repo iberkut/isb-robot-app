@@ -1,34 +1,35 @@
 <template>
   <div class="container">
     <div class="stream">
-      <img src="http://192.168.43.102:8080/?action=stream"
+      <img
+        src="http://192.168.43.102:8080/?action=stream"
       />
     </div>
-    <div class="row1" >
-        <button>
-          Adult
-        </button>
-        <button>
-          Child
-        </button>
+    <div class="row1">
+      <button>
+        Adult
+      </button>
+      <button>
+        Child
+      </button>
     </div>
 
     <div class="row2">
-        <button class="top">
-          Forward
-        </button>
+      <button class="top">
+        Forward
+      </button>
     </div>
 
     <div class="row3">
-        <button>
-          Left
-        </button>
-        <button>
-          Start
-        </button>
-        <button>
-          Right
-        </button>
+      <button>
+        Left
+      </button>
+      <button>
+        Start
+      </button>
+      <button>
+        Right
+      </button>
     </div>
     <div class="row2">
       <button>
@@ -39,28 +40,29 @@
 </template>
 
 <script>
-  
+  import { feathersClient } from '../services/feathers-client'
+
   export default {
     data() {
       return {}
     },
-    methods : {
-      onAdult      : function () {
+    methods: {
+      onAdult: function () {
 
       },
-      onChild      : function () {
+      onChild: function () {
 
       },
-      onTop      : function () {
+      onTop: function () {
+        feathersClient.service('robot-action').find({ query: { fwd: true } })
+      },
+      onLeft: function () {
 
       },
-      onLeft      : function () {
+      onRight: function () {
 
       },
-      onRight      : function () {
-
-      },
-      onBottom      : function () {
+      onBottom: function () {
 
       }
     }

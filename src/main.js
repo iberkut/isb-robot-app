@@ -2,11 +2,9 @@ import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
 import './vuetify'
-import { createFeathersClient } from './services/feathers-client'
+import { feathersClient } from './services/feathers-client'
 
 Vue.config.productionTip = false
-
-const feathersClient = createFeathersClient('192.168.43.102:3030')
 
 new Vue({
   router,
