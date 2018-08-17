@@ -1,6 +1,9 @@
 <template>
     <v-layout xs12>
         <div class="image"></div>
+        <audio autoplay>
+            <source src="../assets/1.mp3" type="audio/mpeg">
+        </audio>
     </v-layout>
 </template>
 
