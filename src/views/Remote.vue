@@ -1,6 +1,9 @@
 <template>
   <div class="container">
-    <div class="stream" />
+    <div class="stream">
+      <img src="http://192.168.43.102:8080/?action=stream"
+      />
+    </div>
     <div class="row1" >
         <button>
           Adult
