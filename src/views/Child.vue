@@ -1,17 +1,23 @@
 <template>
-    <v-layout xs12>
-        <div class="image"></div>
-    </v-layout>
+  <v-layout xs12 class="layout">
+    <v-card class="card">
+      <div class="image"></div>
+    </v-card>
+  </v-layout>
 </template>
 
 <style lang="stylus" scoped>
-.image
-    position absolute
-    width 800px
-    height 400px
-    margin 10em 5em 0 15em
-    background-image: url('../assets/ISB_Georg.png')
-    background-size cover
-    background-repeat no-repeat
+  .layout
+    width 100%
+    height 100%
+    .card
+      width 100%
+      height 100%
+      .image
+        width 100%
+        height 100%
+        background-image: url('../assets/ISB_Georg.png')
+        background-size cover
+        background-repeat no-repeat
 </style>
 

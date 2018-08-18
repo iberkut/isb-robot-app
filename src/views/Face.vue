@@ -1,5 +1,3 @@
 <template>
-  <div class="image">
-    <img width="1024" height="768" src="../assets/isb-eps.gif" />
-  </div>
+  <img width="100%" height="100%" src="../assets/isb-eps.gif" />
 </template>
