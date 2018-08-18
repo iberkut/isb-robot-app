@@ -78,7 +78,7 @@
     width 100%
 
   .stream
-    min-height 350px
+    min-height 280px
 
   .row1
     display flex

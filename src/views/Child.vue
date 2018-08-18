@@ -2,6 +2,9 @@
   <v-layout xs12 class="layout">
     <v-card class="card">
       <div class="image"></div>
+      <audio autoplay>
+        <source src="../assets/1.mp3" type="audio/mpeg">
+      </audio>
     </v-card>
   </v-layout>
 </template>
