@@ -5,6 +5,12 @@
     </div>
 
     <div class="row1 mb-4">
+      <v-btn fab dark color="error" @click="onRotateLeft">
+        <v-icon dark>cached</v-icon>
+      </v-btn>
+      <v-btn fab dark color="error" @click="onRotateRight">
+        <v-icon dark>trending_flat</v-icon>
+      </v-btn>
       <v-btn fab dark color="accent" @click="onChild">
         <v-icon dark>child_care</v-icon>
       </v-btn>
@@ -55,6 +61,12 @@
       },
       onForward() {
         this.doAction('fwd')
+      },
+      onRotateLeft() {
+        this.doAction('rotateLeft')
+      },
+      onRotateRight() {
+        this.doAction('rotateRight')
       },
       onStop() {
         this.doAction('stop')
