@@ -1,4 +1,4 @@
-# isb-robot-app
+# isb-robot-web
 
 ## Project setup
 ```
